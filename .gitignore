@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Data fetched from Airtable
+src/count.json

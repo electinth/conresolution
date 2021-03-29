@@ -6,7 +6,8 @@
     "build": "vite build",
     "serve": "vite preview",
     "check": "svelte-check",
-    "lint": "prettier --write --ignore-unknown ."
+    "lint": "prettier --write --ignore-unknown .",
+    "fetch": "node src/utils/fetch.js"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "next",
@@ -17,5 +18,9 @@
     "typescript": "^4.2.3",
     "vite": "^2.1.3",
     "vite-plugin-windicss": "^0.11.0"
+  },
+  "dependencies": {
+    "airtable": "^0.10.1",
+    "dotenv": "^8.2.0"
   }
 }
