@@ -3,13 +3,14 @@ const { writeFileSync } = require('fs')
 
 require('dotenv').config()
 
+const TABLE_NAME = 'Count'
 const FIELD_COUNT = 'Count'
 const FIELD_DATE = 'Date'
 const OUTPUT_DIR = './src/count.json'
 
 const table = new Airtable({ apiKey: process.env.AIRTABLE_KEY }).base(
   process.env.AIRTABLE_BASE
-)(process.env.AIRTABLE_TABLE)
+)(TABLE_NAME)
 
 const fetchRecords = () =>
   new Promise((resolve, reject) => {

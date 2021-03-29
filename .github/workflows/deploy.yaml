@@ -8,13 +8,23 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup Node v12
+        uses: actions/setup-node@v2
         with:
           node-version: '12'
-      - run: yarn
-      - run: node_modules/.bin/vite build --base=/conresolution
-      - uses: peaceiris/actions-gh-pages@v3
+      - name: Install dependencies
+        run: yarn
+      - name: Fetch Airtable data
+        run: yarn fetch
+        env:
+          AIRTABLE_KEY: ${{ secrets.AIRTABLE_KEY }}
+          AIRTABLE_BASE: ${{ secrets.AIRTABLE_BASE }}
+      - name: Build
+        run: node_modules/.bin/vite build --base=/conresolution
+      - name: Publish to Github Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
