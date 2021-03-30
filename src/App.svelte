@@ -1,5 +1,5 @@
 <script lang="ts">
-  import countData from './count.json'
+  import countData from './assets/count.json'
 
   const lastUpdated = new Date(countData.lastUpdated).toLocaleDateString(
     'th-TH'
