@@ -4,6 +4,14 @@
   import 'swiper/swiper-bundle.css'
 
   let container: HTMLElement
+  let swiper: Swiper
+  let showPrevButton: boolean = false
+  let showNextButton: boolean = true
+
+  const transitionEnd = (swiper: Swiper) => {
+    showPrevButton = !swiper.isBeginning
+    showNextButton = !swiper.isEnd
+  }
 
   onMount(() => {
     const slides = [...container.children[0].children]
@@ -12,9 +20,12 @@
     slides[0].classList.add('ml-8')
     slides[slides.length - 1].classList.add('mr-8')
 
-    new Swiper(container, {
+    swiper = new Swiper(container, {
       slidesPerView: 'auto',
       spaceBetween: 18,
+      on: {
+        transitionEnd,
+      },
     })
   })
 </script>
@@ -23,4 +34,10 @@
   <div class="swiper-wrapper">
     <slot />
   </div>
+  {#if showPrevButton}
+    <div class="swiper-button-prev" on:click={() => swiper.slidePrev()} />
+  {/if}
+  {#if showNextButton}
+    <div class="swiper-button-next" on:click={() => swiper.slideNext()} />
+  {/if}
 </div>

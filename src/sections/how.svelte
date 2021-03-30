@@ -9,8 +9,9 @@
     ภายใต้หลักคิด 3 ข้อ
   </h2>
   <HorizontalScroll>
-    <div class="bg-white rounded-lg p-10 w-screen-lg">Slide 1</div>
-    <div class="bg-white rounded-lg p-10 w-64">Slide 2</div>
-    <div class="bg-white rounded-lg p-10 w-48">Slide 3</div>
+    <div class="bg-white rounded-lg p-10 w-screen-xl">Slide 1</div>
+    <div class="bg-white rounded-lg p-10 w-screen-xl">Slide 2</div>
+    <div class="bg-white rounded-lg p-10 w-64">Slide 3</div>
+    <div class="bg-white rounded-lg p-10 w-64">Slide 4</div>
   </HorizontalScroll>
 </Layout>
