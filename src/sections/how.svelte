@@ -1,6 +1,9 @@
 <script>
+  import SlideCover from '../components/slide-cover.svelte'
   import HorizontalScroll from '../components/horizontal-scroll.svelte'
   import Layout from '../components/layout.svelte'
+  import SlideFull from '../components/slide-full.svelte'
+  import SlideSmall from '../components/slide-small.svelte'
 </script>
 
 <Layout class="bg-green-1 space-y-8 overflow-x-hidden">
@@ -9,9 +12,13 @@
     ภายใต้หลักคิด 3 ข้อ
   </h2>
   <HorizontalScroll>
-    <div class="bg-white rounded-lg p-10 w-screen-xl">Slide 1</div>
-    <div class="bg-white rounded-lg p-10 w-screen-xl">Slide 2</div>
-    <div class="bg-white rounded-lg p-10 w-64">Slide 3</div>
-    <div class="bg-white rounded-lg p-10 w-64">Slide 4</div>
+    <SlideCover heading1="ยุบ" heading2="วุฒิสภา">Slide 1</SlideCover>
+    <SlideFull>Slide 2</SlideFull>
+    <SlideSmall
+      label="ข้อดี 1"
+      title="ปัจจุบัน ส.ว. 1 คน มีอำนาจเท่ากับประชาชน 70,000 คน ในการตัดสินว่าใครจะเป็นผู้นำประเทศ"
+      >ปัจจุบัน ส.ว. 1 คน มีอำนาจเท่ากับประชาชน 70,000 คน
+      ในการตัดสินว่าใครจะเป็นผู้นำประเทศ</SlideSmall
+    >
   </HorizontalScroll>
 </Layout>
