@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Anakotmai';
+  font-weight: bold;
+  src: url('./Anakotmai-Bold.otf') format('woff');
+}
+
+@font-face {
+  font-family: 'Anuphan';
+  src: url('./Anuphan-Regular.otf') format('woff');
+}
+
+@font-face {
+  font-family: 'Anuphan';
+  font-weight: bold;
+  src: url('./Anuphan-Bold.otf') format('woff');
+}
