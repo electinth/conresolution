@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "airtable": "^0.10.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "swiper": "^6.5.2"
   }
 }
