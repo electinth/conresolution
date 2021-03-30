@@ -1,5 +1,5 @@
 <script>
-  import NumberCard from '../components/number-card.svelte'
+  import NumberCard from '../components/why/number-card.svelte'
   import Layout from '../components/layout.svelte'
 
   const reasons = [

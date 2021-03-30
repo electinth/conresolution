@@ -1,9 +1,9 @@
 <script>
-  import SlideCover from '../components/slide-cover.svelte'
-  import HorizontalScroll from '../components/horizontal-scroll.svelte'
+  import SlideCover from '../components/how/slide-cover.svelte'
+  import HorizontalScroll from '../components/how/horizontal-scroll.svelte'
   import Layout from '../components/layout.svelte'
-  import SlideFull from '../components/slide-full.svelte'
-  import SlideSmall from '../components/slide-small.svelte'
+  import SlideFull from '../components/how/slide-full.svelte'
+  import SlideSmall from '../components/how/slide-small.svelte'
 </script>
 
 <Layout class="bg-green-1 space-y-8 overflow-x-hidden">
