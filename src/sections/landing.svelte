@@ -42,9 +42,11 @@
       </p>
 
       <div class="space-y-4">
-        <div class="flex flex-col -md:space-y-2 md:(flex-row space-x-2)">
-          <Button class="md:w-64 bg-neon text-green-1 mx-auto">ลงชื่อ</Button>
-          <Button class="md:w-64 text-neon border border-neon mx-auto">
+        <div
+          class="flex flex-col -md:(space-y-2) md:(flex-row space-x-2 w-screen-sm)"
+        >
+          <Button class="bg-neon text-green-1 mx-auto">ลงชื่อ</Button>
+          <Button class="text-neon border border-neon mx-auto">
             ร่วมเป็นอาสาสมัคร
           </Button>
         </div>

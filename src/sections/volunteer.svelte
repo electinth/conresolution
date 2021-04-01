@@ -11,8 +11,8 @@
     หรือสามารถตั้งโต๊ะได้ด้วยตัวเองโดยใช้คู่มือที่เราเตรียมไว้ให้
   </p>
   <div class="flex flex-row space-x-1">
-    <Button class="bg-blue-3 text-green-1 flex-1">สมัครเป็นทีมงาน</Button>
-    <Button class="bg-blue-3 text-green-1 flex-1"
+    <Button class="bg-blue-3 text-green-1">สมัครเป็นทีมงาน</Button>
+    <Button class="bg-blue-3 text-green-1"
       >ดูคู่มือการเปิดโต๊ะรับร่างด้วยตัวเอง</Button
     >
   </div>
