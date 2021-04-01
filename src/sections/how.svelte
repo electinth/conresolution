@@ -102,10 +102,10 @@
       text1="กระบวนการสรรหา และ รับรอง"
       text2="กรรมการองค์กรอิสระ (กกต. / ปปช. / สตง. / ผู้ตรวจการแผ่นดิน / กสม.)"
     >
-      <Slice label="ปัจจุบัน" class="flex-1">
+      <Slice label="ปัจจุบัน" class="flex-2">
         <img src="images/2-organization-now.png" alt="ปัจจุบัน" />
       </Slice>
-      <Slice label="อนาคต" class="flex-3">
+      <Slice label="อนาคต" class="flex-5">
         <img src="images/2-organization-future.png" alt="อนาคต" />
       </Slice>
     </SlideFullContent>
@@ -158,10 +158,10 @@
       text1="กระบวนการสรรหา และ รับรอง"
       text2="กรรมการองค์กรอิสระ (กกต. / ปปช. / สตง. / ผู้ตรวจการแผ่นดิน / กสม.)"
     >
-      <Slice label="ปัจจุบัน" class="flex-1">
+      <Slice label="ปัจจุบัน" class="flex-2">
         <img src="images/2-organization-now.png" alt="ปัจจุบัน" />
       </Slice>
-      <Slice label="อนาคต" class="flex-3">
+      <Slice label="อนาคต" class="flex-5">
         <img src="images/2-organization-future.png" alt="อนาคต" />
       </Slice>
     </SlideFullContent>

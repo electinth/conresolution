@@ -1,3 +1,3 @@
-<div class="flex flex-1 flex-row divide-x divide-neon w-full h-full">
+<div class="flex flex-row divide-x divide-neon h-full justify-center">
   <slot />
 </div>
