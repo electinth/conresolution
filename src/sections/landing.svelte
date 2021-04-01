@@ -3,7 +3,6 @@
   import countData from '../assets/data/count.json'
   import FollowUs from '../components/follow-us.svelte'
   import LottieCar from '../components/landing/lottie-car.svelte'
-  import brickWall from '../assets/images/brick-wall.png'
 
   const lastUpdatedText = new Date(countData.lastUpdated).toLocaleDateString(
     'th-TH',
@@ -26,7 +25,7 @@
     </div>
     <div class="flex-1 bg-black">
       <img
-        src={brickWall}
+        src="images/brick-wall.png"
         alt="Brick wall"
         class="w-full h-full object-cover"
       />

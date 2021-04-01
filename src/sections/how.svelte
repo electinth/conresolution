@@ -11,7 +11,7 @@
   import advantage3 from '../assets/data/advantage3.json'
 </script>
 
-<Layout class="bg-green-1 space-y-8 overflow-x-hidden">
+<Layout class="bg-green-1 overflow-x-hidden">
   <h2 class="text-h4 text-white text-center max-w-screen-sm mx-auto">
     เพื่อทำลายระบอบประยุทธ์ เราสามารถริเริ่มได้ด้วยการแก้รัฐธรรมนูญ
     ภายใต้หลักคิด 3 ข้อ
