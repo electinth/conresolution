@@ -104,4 +104,4 @@ dist
 .tern-port
 
 # Data fetched from Airtable
-src/assets/count.json
+src/assets/data/

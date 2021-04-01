@@ -1,18 +1,19 @@
 const Airtable = require('airtable')
-const { writeFileSync } = require('fs')
+const { writeFileSync, mkdirSync, existsSync } = require('fs')
 
 require('dotenv').config()
 
-const TABLE_NAME = 'Count'
-const FIELD_COUNT = 'Count'
-const FIELD_DATE = 'Date'
-const OUTPUT_DIR = './src/assets/count.json'
+const TABLE_COUNT = 'Count'
+const TABLE_LOCATION = 'Location'
+const OUTPUT_DIR = './src/assets/data/'
+const OUTPUT_COUNT = 'count.json'
+const OUTPUT_LOCATION = 'location.json'
 
-const table = new Airtable({ apiKey: process.env.AIRTABLE_KEY }).base(
+const base = new Airtable({ apiKey: process.env.AIRTABLE_KEY }).base(
   process.env.AIRTABLE_BASE
-)(TABLE_NAME)
+)
 
-const fetchRecords = () =>
+const fetchRecords = (table) =>
   new Promise((resolve, reject) => {
     let records = []
 
@@ -34,17 +35,48 @@ const fetchRecords = () =>
       )
   })
 
-fetchRecords()
-  .then((records) => {
-    const count = records.reduce(
-      (sum, record) => sum + record.get(FIELD_COUNT),
-      0
-    )
-    const lastUpdated = records[records.length - 1].get(FIELD_DATE)
+try {
+  if (!existsSync(OUTPUT_DIR)) {
+    mkdirSync(OUTPUT_DIR)
+  }
 
-    writeFileSync(OUTPUT_DIR, JSON.stringify({ count, lastUpdated }))
+  fetchRecords(base(TABLE_COUNT)).then((records) => {
+    const count = records.reduce((sum, record) => sum + record.get('count'), 0)
+    const lastUpdated = records[records.length - 1].get('date')
+
+    writeFileSync(
+      OUTPUT_DIR + OUTPUT_COUNT,
+      JSON.stringify({ count, lastUpdated })
+    )
   })
-  .catch((err) => {
-    console.error(err)
-    process.exit(1)
+
+  fetchRecords(base(TABLE_LOCATION)).then((records) => {
+    const provinces = [
+      ...new Set(records.map((record) => record.get('province'))),
+    ]
+
+    const locations = provinces.map((province) => ({
+      province,
+      points: records
+        .filter((record) => record.fields.province === province)
+        .map(({ fields: { province: provinceField, ...rest } }) => rest),
+    }))
+
+    const lastUpdated = records
+      .map((record) => record.get('lastUpdated'))
+      .sort()[records.length - 1]
+
+    writeFileSync(
+      OUTPUT_DIR + OUTPUT_LOCATION,
+      JSON.stringify({
+        provinceCount: provinces.length,
+        pointCount: records.length,
+        lastUpdated,
+        locations,
+      })
+    )
   })
+} catch (err) {
+  console.error(err)
+  process.exit(1)
+}

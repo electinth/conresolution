@@ -1,5 +1,5 @@
 <script lang="ts">
-  import countData from '../assets/count.json'
+  import countData from '../assets/data/count.json'
 
   const TARGET_COUNT = 50000
   const LOCALE = 'th-TH'
