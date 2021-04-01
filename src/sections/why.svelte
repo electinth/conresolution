@@ -14,9 +14,9 @@
 </script>
 
 <Layout class="bg-green-2 space-y-8">
-  <h2 class="text-h4 text-white text-center">ทำไมต้องรื้อระบอบประยุทธ์</h2>
+  <h2 class="text-h3 text-white text-center">ทำไมต้องรื้อระบอบประยุทธ์</h2>
 
-  <div class="grid grid-cols-7">
+  <div class="grid grid-cols-1 md:grid-cols-7">
     {#each reasons as reason, index}
       <NumberCard number={index + 1}>{reason}</NumberCard>
     {/each}

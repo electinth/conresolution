@@ -15,7 +15,7 @@ body {
 }
 
 .text-h3 {
-  @apply font-anakotmai font-bold text-44px md:text-30px;
+  @apply font-anakotmai font-bold text-30px md:text-44px;
 }
 
 .text-h4 {

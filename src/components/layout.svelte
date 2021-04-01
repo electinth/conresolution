@@ -1,3 +1,3 @@
-<section class="py-20 px-8 {$$props.class || ''}">
+<section class="py-12 px-4 md:(px-8 py-20) {$$props.class || ''}">
   <slot />
 </section>
