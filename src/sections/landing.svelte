@@ -4,17 +4,7 @@
   import FollowUs from '../components/follow-us.svelte'
   import LottieCar from '../components/landing/lottie-car.svelte'
   import Button from '../components/button.svelte'
-
-  const lastUpdatedText = new Date(countData.lastUpdated).toLocaleDateString(
-    'th-TH',
-    {
-      year: '2-digit',
-      month: 'short',
-      day: 'numeric',
-    }
-  )
-
-  const currentText = countData.count.toLocaleString('th-TH')
+  import { formatThaiDate } from '../utils/date'
 </script>
 
 <section class="text-center h-screen flex bg-black relative">
@@ -43,11 +33,13 @@
         class="flex flex-col justify-center -md:space-y-4 md:(flex-row space-x-4)"
       >
         <p class="text-h5 my-auto">มีแล้วกว่า</p>
-        <p class="text-number">{currentText}</p>
+        <p class="text-number">{countData.count.toLocaleString('th-TH')}</p>
         <p class="text-h5 my-auto">รายชื่อ</p>
       </div>
 
-      <p class="text-b4">อัปเดทข้อมูลล่าสุด {lastUpdatedText}</p>
+      <p class="text-b4">
+        อัปเดทข้อมูลล่าสุด {formatThaiDate(countData.lastUpdated)}
+      </p>
 
       <div class="space-y-4">
         <div class="flex flex-col -md:space-y-2 md:(flex-row space-x-2)">
