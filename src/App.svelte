@@ -2,6 +2,7 @@
   import How from './sections/how.svelte'
   import Landing from './sections/landing.svelte'
   import Sign from './sections/sign.svelte'
+  import Volunteer from './sections/volunteer.svelte'
   import Why from './sections/why.svelte'
 </script>
 
@@ -10,4 +11,5 @@
   <Why />
   <How />
   <Sign />
+  <Volunteer />
 </main>
