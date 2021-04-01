@@ -1,6 +1,12 @@
 <script>
   import FollowUs from '../components/follow-us.svelte'
   import Layout from '../components/layout.svelte'
+
+  const links = [
+    { alt: 'Resolution', src: 'images/logo-resolution.png', href: '#' },
+    { alt: 'iLaw', src: 'images/logo-ilaw.png', href: '#' },
+    { alt: 'ELECT', src: 'images/logo-elect.png', href: '#' },
+  ]
 </script>
 
 <Layout class="bg-green-1 divide-white divide-y-1">
@@ -8,21 +14,16 @@
     <FollowUs />
   </div>
 
-  <div class="flex justify-around py-12">
-    <a href="/#" target="_blank" rel="noopener noreferrer">
-      <img src="images/logo-resolution.png" alt="Resolution" />
-    </a>
-    <a href="/#" target="_blank" rel="noopener noreferrer">
-      <img src="images/logo-ilaw.png" alt="iLaw" />
-    </a>
-    <a href="/#" target="_blank" rel="noopener noreferrer">
-      <img src="images/logo-elect.png" alt="ELECT" />
-    </a>
+  <div class="flex justify-around py-6 md:py-12 w-full max-w-screen-xl mx-auto">
+    {#each links as { alt, src, href }}
+      <a
+        {href}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="my-auto max-w-16 md:max-w-24"
+      >
+        <img {src} {alt} />
+      </a>
+    {/each}
   </div>
 </Layout>
-
-<style>
-  a {
-    @apply my-auto max-w-24;
-  }
-</style>

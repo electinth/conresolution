@@ -14,7 +14,7 @@
 </script>
 
 <Layout heading="ทำไมต้องรื้อระบอบประยุทธ์" class="bg-green-2">
-  <div class="grid grid-cols-1 md:grid-cols-7">
+  <div class="grid grid-cols-1 md:grid-cols-7 w-full max-w-screen-xl m-auto">
     {#each reasons as reason, index}
       <NumberCard number={index + 1}>{reason}</NumberCard>
     {/each}

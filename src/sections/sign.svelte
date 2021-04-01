@@ -10,7 +10,7 @@
 </script>
 
 <Layout heading="ร่วมลงชื่อ" class="bg-green-1">
-  <div class="flex flex-col -md:-mx-3">
+  <div class="flex flex-col w-full max-w-screen-lg mx-auto -md:-mx-3">
     <div class="flex flex-row space-x-1">
       <TabHead class="bg-blue-3" on:click={() => (activeTab = 'post')}
         >ส่งไปรษณีย์ด้วยตนเอง</TabHead

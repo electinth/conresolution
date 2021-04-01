@@ -4,7 +4,7 @@
 
 <style>
   div {
-    @apply w-screen-md;
+    @apply w-screen-md max-w-screen-lg;
   }
 
   @media (min-width: 768px) {
