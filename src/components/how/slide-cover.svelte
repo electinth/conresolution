@@ -1,4 +1,6 @@
 <script lang="ts">
+  import HorizontalContainer from './horizontal-container.svelte'
+
   import SlideFull from './slide-full.svelte'
 
   export let heading1: string = ''
@@ -6,11 +8,20 @@
 </script>
 
 <SlideFull>
-  <div class="slide grid grid-cols-3 rounded-lg overflow-hidden -m-8 w-full">
-    <div class="flex flex-col bg-neon justify-center p-8">
-      <p class="text-h4 text-green-3">{heading1}</p>
-      <p class="text-h4 text-green-1">{heading2}</p>
+  <div class="flex flex-row rounded-lg overflow-hidden w-full h-full p-0">
+    <div class="w-2/7 md:w-1/3 max-w-72 bg-neon relative">
+      <div class="absolute right-0 top-0 bottom-0 flex flex-col justify-center">
+        <slot name="number" />
+      </div>
+      <div class="absolute inset-0 flex flex-col justify-center p-6 space-y-4">
+        <p class="text-h4 text-green-3">{heading1}</p>
+        <p class="text-h4 text-green-1">{heading2}</p>
+      </div>
     </div>
-    <div class="col-span-2 bg-blue-1 p-8"><slot /></div>
+    <div class="flex-1 py-8 col-span-2 bg-blue-1">
+      <HorizontalContainer>
+        <slot />
+      </HorizontalContainer>
+    </div>
   </div>
 </SlideFull>

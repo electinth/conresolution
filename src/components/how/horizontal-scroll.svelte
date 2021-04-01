@@ -23,6 +23,7 @@
     swiper = new Swiper(container, {
       slidesPerView: 'auto',
       spaceBetween: 12,
+      freeMode: true,
       on: {
         transitionEnd,
       },

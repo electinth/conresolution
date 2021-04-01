@@ -1,9 +1,15 @@
-<div class="slide flex flex-row rounded-lg overflow-hidden bg-blue-1 p-8">
+<div class="rounded-lg overflow-hidden bg-blue-1 h-md md:h-lg">
   <slot />
 </div>
 
 <style>
   div {
-    width: calc(100vw - 4rem);
+    @apply w-screen-md;
+  }
+
+  @media (min-width: 768px) {
+    div {
+      width: calc(100vw - 4rem);
+    }
   }
 </style>

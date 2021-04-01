@@ -1,0 +1,19 @@
+<script lang="ts">
+  import HorizontalContainer from './horizontal-container.svelte'
+  import SlideFull from './slide-full.svelte'
+
+  export let text1: string
+  export let text2: string
+</script>
+
+<SlideFull>
+  <div class="flex-1 flex flex-col py-8 px-6">
+    <div class="text-h6">
+      <p>{text1}</p>
+      <p class="text-white max-w-96">{text2}</p>
+    </div>
+    <div class="flex-1 py-4">
+      <HorizontalContainer><slot /></HorizontalContainer>
+    </div>
+  </div>
+</SlideFull>
