@@ -3,6 +3,7 @@
   import countData from '../assets/data/count.json'
   import FollowUs from '../components/follow-us.svelte'
   import LottieCar from '../components/landing/lottie-car.svelte'
+  import Button from '../components/button.svelte'
 
   const lastUpdatedText = new Date(countData.lastUpdated).toLocaleDateString(
     'th-TH',
@@ -50,16 +51,10 @@
 
       <div class="space-y-4">
         <div class="flex flex-col -md:space-y-2 md:(flex-row space-x-2)">
-          <button
-            class="rounded bg-neon text-green-1 py-4 w-64 font-bold mx-auto"
-          >
-            ลงชื่อ
-          </button>
-          <button
-            class="rounded text-neon border border-neon py-4 w-64 font-bold mx-auto"
-          >
+          <Button class="md:w-64 bg-neon text-green-1 mx-auto">ลงชื่อ</Button>
+          <Button class="md:w-64 text-neon border border-neon mx-auto">
             ร่วมเป็นอาสาสมัคร
-          </button>
+          </Button>
         </div>
 
         <a href="/#" class="text-b3 underline block">
