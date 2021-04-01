@@ -10,7 +10,7 @@
 <section class="text-center h-screen flex bg-black relative">
   <div class="absolute inset-0 flex flex-row">
     <div
-      class="bg-white flex flex-col justify-end justify-end bg-gradient-to-b from-white to-blue-3 bg-opacity-80"
+      class="bg-white flex flex-col justify-end justify-end bg-gradient-to-b from-white to-blue-3 bg-opacity-80 md:w-1/8"
     >
       <LottieCar />
     </div>
@@ -55,7 +55,7 @@
           อ่านคำอธิบายร่างแก้ไขเพิ่มเติมรัฐธรรมนูญรายมาตรา
         </a>
       </div>
-      <div class="flex justify-center">
+      <div class="flex justify-center pt-4">
         <Sharer />
       </div>
     </div>

@@ -16,4 +16,7 @@
   })
 </script>
 
-<div bind:this={container} class="-md:(w-24 -mx-8) {$$props.class || ''}" />
+<div
+  bind:this={container}
+  class="-md:(w-24 -mx-8) md:(w-30 ml-auto) {$$props.class || ''}"
+/>
