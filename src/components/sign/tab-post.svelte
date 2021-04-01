@@ -5,7 +5,7 @@
 </script>
 
 <div class="bg-blue-3 py-2 rounded-b-md ">
-  <TabBody class="divide-blue-2 divide-y">
+  <TabBody class="divide-blue-2 divide-y max-w-screen-md">
     <PostStep number="1">
       <p>
         ดาวน์โหลด <span class="font-bold">แบบฟอร์ม</span> ... สำหรับการเข้าชื่อเสนอกฎหมาย

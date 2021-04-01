@@ -7,7 +7,7 @@
 </script>
 
 <div class="bg-white py-2 rounded-b-md ">
-  <TabBody class="divide-black divide-y-2">
+  <TabBody class="divide-black divide-y-2 max-w-screen-lg">
     <div class="text-center p-6 space-y-2">
       <h6 class="text-h5 font-bold">
         มีจุดตั้งโต๊ะทั้งหมด {location.pointCount} จุด ใน {location.provinceCount}
@@ -18,7 +18,7 @@
       </p>
       <div class="flex flex-row space-x-4 justify-center pt-4">
         <PointLabel color="bg-blue-1">จุดตั้งโต๊ะประจำ</PointLabel>
-        <PointLabel color="bg-orange">จุดตั้งโต๊ะประจำ</PointLabel>
+        <PointLabel color="bg-orange">จุดตั้งโต๊ะชั่วคราว</PointLabel>
       </div>
     </div>
 
