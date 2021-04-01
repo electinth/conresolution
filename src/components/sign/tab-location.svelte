@@ -16,7 +16,7 @@
       <p class="text-b4">
         อัปเดทข้อมูลล่าสุด {formatThaiDate(location.lastUpdated)}
       </p>
-      <div class="flex flex-row space-x-4 justify-center pt-4">
+      <div class="flex flex-row space-x-4 justify-center py-4">
         <PointLabel color="bg-blue-1">จุดตั้งโต๊ะประจำ</PointLabel>
         <PointLabel color="bg-orange">จุดตั้งโต๊ะชั่วคราว</PointLabel>
       </div>

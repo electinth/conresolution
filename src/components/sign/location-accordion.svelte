@@ -21,12 +21,12 @@
 </script>
 
 <div class="flex flex-col space-y-6 py-4">
-  <div class="flex flex-row">
+  <button class="flex flex-row text-left" on:click={() => (isOpen = !isOpen)}>
     <div class="flex-1">
       <span class="text-h6 font-bold">{province}</span>
       <span class="text-b2">( {points.length} จุด )</span>
     </div>
-    <button on:click={() => (isOpen = !isOpen)}>
+    <div>
       <svg
         width="17"
         height="13"
@@ -38,11 +38,11 @@
       >
         <path d="M1 1.5L8.5 10.5L16 1.5" stroke="#0E3431" stroke-width="2" />
       </svg>
-    </button>
-  </div>
+    </div>
+  </button>
 
   {#if isOpen}
-    <div class="grid grid-cols-1 md:grid-cols-2 -md:space-y-4">
+    <div class="grid grid-cols-1 md:grid-cols-2">
       {#each points as point, index}
         <Point {point} number={index + 1} />
       {/each}

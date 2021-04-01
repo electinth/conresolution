@@ -21,14 +21,14 @@
   export let point: Point
 </script>
 
-<div class="flex flex-row space-x-3">
+<div class="flex flex-row space-x-3 mb-4">
   <div>
     <div
       class="w-6 h-6 rounded-full text-white flex {point.isTemporary
         ? 'bg-orange'
         : 'bg-blue-1'}"
     >
-      <p class="text-center m-auto">{number}</p>
+      <p class="text-b4 font-bold text-center m-auto">{number}</p>
     </div>
   </div>
   <div class="flex-1 space-y-2">
