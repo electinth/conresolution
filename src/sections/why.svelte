@@ -13,9 +13,7 @@
   ]
 </script>
 
-<Layout class="bg-green-2">
-  <h2 class="text-h3 text-white text-center">ทำไมต้องรื้อระบอบประยุทธ์</h2>
-
+<Layout heading="ทำไมต้องรื้อระบอบประยุทธ์" class="bg-green-2">
   <div class="grid grid-cols-1 md:grid-cols-7">
     {#each reasons as reason, index}
       <NumberCard number={index + 1}>{reason}</NumberCard>

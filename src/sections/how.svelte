@@ -11,12 +11,10 @@
   import advantage3 from '../assets/data/advantage3.json'
 </script>
 
-<Layout class="bg-green-1 overflow-x-hidden">
-  <h2 class="text-h4 text-white text-center max-w-screen-sm mx-auto">
-    เพื่อทำลายระบอบประยุทธ์ เราสามารถริเริ่มได้ด้วยการแก้รัฐธรรมนูญ
-    ภายใต้หลักคิด 3 ข้อ
-  </h2>
-
+<Layout
+  heading="เพื่อทำลายระบอบประยุทธ์ เราสามารถริเริ่มได้ด้วยการแก้รัฐธรรมนูญภายใต้หลักคิด 3 ข้อ"
+  class="bg-green-1 overflow-x-hidden"
+>
   <HorizontalScroll>
     <SlideCover heading1="ยุบ" heading2="วุฒิสภา">
       <svg
