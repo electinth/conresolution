@@ -23,7 +23,7 @@
     </svg>
   </a>
   <a
-    href="http://www.facebook.com/sharer/sharer.php?u={url}"
+    href="https://twitter.com/intent/tweet?url={url}"
     target="_blank"
     rel="noopener noreferrer"
   >
