@@ -11,6 +11,7 @@ module.exports = {
       'blue-2': '#CBEEF0',
       'blue-3': '#E6FEFF',
       neon: '#EDFF82',
+      orange: '#FF7A00',
     },
     fontFamily: {
       anakotmai: ['Anakotmai', 'sans-serif'],

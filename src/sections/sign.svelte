@@ -2,6 +2,7 @@
   import TabHead from '../components/sign/tab-head.svelte'
   import Layout from '../components/layout.svelte'
   import TabPost from '../components/sign/tab-post.svelte'
+  import TabLocation from '../components/sign/tab-location.svelte'
 </script>
 
 <Layout class="bg-green-1">
@@ -11,6 +12,7 @@
       <TabHead class="bg-blue-3">ส่งไปรษณีย์ด้วยตนเอง</TabHead>
       <TabHead class="bg-white">ลงชื่อที่จุดตั้งโต๊ะ</TabHead>
     </div>
-    <TabPost />
+    <!-- <TabPost /> -->
+    <TabLocation />
   </div>
 </Layout>

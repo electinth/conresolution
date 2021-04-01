@@ -1,10 +1,11 @@
 <script>
   import Button from '../button.svelte'
   import PostStep from './post-step.svelte'
+  import TabBody from './tab-body.svelte'
 </script>
 
 <div class="bg-blue-3 py-2 rounded-b-md ">
-  <div class="w-full max-w-screen-md mx-auto px-3 divide-blue-2 divide-y">
+  <TabBody class="divide-blue-2 divide-y">
     <PostStep number="1">
       <p>
         ดาวน์โหลด <span class="font-bold">แบบฟอร์ม</span> ... สำหรับการเข้าชื่อเสนอกฎหมาย
@@ -53,5 +54,5 @@
         >ดูคำอธิบายร่างแก้ไขรัฐธรรมนูญรายมาตรา</Button
       >
     </div>
-  </div>
+  </TabBody>
 </div>
