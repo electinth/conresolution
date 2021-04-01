@@ -1,47 +1,47 @@
 body {
-  @apply font-anuphan text-15px md:text-21px;
+  @apply font-anuphan text-body15 md:text-body21;
 }
 
 .text-number {
-  @apply font-anakotmai font-bold text-60px md:text-120px;
+  @apply font-anakotmai font-bold text-head60 md:text-head120;
 }
 
 .text-h1 {
-  @apply font-anakotmai font-bold text-44px md:text-63px;
+  @apply font-anakotmai font-bold text-head44 md:text-head63;
 }
 
 .text-h2 {
-  @apply font-anakotmai font-bold text-36px md:text-52px;
+  @apply font-anakotmai font-bold text-head36 md:text-head52;
 }
 
 .text-h3 {
-  @apply font-anakotmai font-bold text-30px md:text-44px;
+  @apply font-anakotmai font-bold text-head30 md:text-head44;
 }
 
 .text-h4 {
-  @apply font-anakotmai font-bold text-25px md:text-36px;
+  @apply font-anakotmai font-bold text-head25 md:text-head36;
 }
 
 .text-h5 {
-  @apply font-anakotmai font-bold text-21px md:text-30px;
+  @apply font-anakotmai font-bold text-head21 md:text-head30;
 }
 
 .text-h6 {
-  @apply font-anakotmai font-bold text-17px md:text-25px;
+  @apply font-anakotmai font-bold text-head17 md:text-head25;
 }
 
 .text-b1 {
-  @apply font-anuphan text-15px md:text-21px;
+  @apply font-anuphan text-body15 md:text-body21;
 }
 
 .text-b2 {
-  @apply font-anuphan text-12px md:text-17px;
+  @apply font-anuphan text-body12 md:text-body17;
 }
 
 .text-b3 {
-  @apply font-anuphan text-10px md:text-15px;
+  @apply font-anuphan text-body10 md:text-body15;
 }
 
 .text-b4 {
-  @apply font-anuphan text-8px md:text-12px;
+  @apply font-anuphan text-body8 md:text-body12;
 }
