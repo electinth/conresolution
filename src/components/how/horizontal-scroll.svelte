@@ -18,8 +18,8 @@
     const slides = [...container.children[0].children]
 
     slides.forEach((slide) => slide.classList.add('swiper-slide'))
-    slides[0].classList.add('ml-8')
-    slides[slides.length - 1].classList.add('mr-8')
+    slides[0].classList.add('ml-4', 'md:ml-8')
+    slides[slides.length - 1].classList.add('mr-4', 'md:mr-8')
 
     swiper = new Swiper(container, {
       slidesPerView: 'auto',

@@ -19,7 +19,6 @@
     <SlideCover heading1="ยุบ" heading2="วุฒิสภา">
       <svg
         slot="number"
-        class="h-64 md:h-72"
         viewBox="0 0 101 249"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +60,6 @@
     >
       <svg
         slot="number"
-        class="h-64 md:h-72"
         viewBox="0 0 164 255"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +118,6 @@
     <SlideCover heading1="ยกเลิก" heading2="ยุทธศาสตร์ชาติ">
       <svg
         slot="number"
-        class="h-64 md:h-72"
         viewBox="0 0 150 262"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -143,28 +140,6 @@
         <img src="images/3-future.png" alt="อนาคต" />
       </Slice>
     </SlideCover>
-    <SlideFullContent
-      text1="กระบวนการสรรหา และ รับรอง"
-      text2="ตุลาการศาลรัฐธรรมนูญ"
-    >
-      <Slice label="ปัจจุบัน" class="flex-3">
-        <img src="images/2-court-now.png" alt="ปัจจุบัน" />
-      </Slice>
-      <Slice label="อนาคต" class="flex-4">
-        <img src="images/2-court-future.png" alt="อนาคต" />
-      </Slice>
-    </SlideFullContent>
-    <SlideFullContent
-      text1="กระบวนการสรรหา และ รับรอง"
-      text2="กรรมการองค์กรอิสระ (กกต. / ปปช. / สตง. / ผู้ตรวจการแผ่นดิน / กสม.)"
-    >
-      <Slice label="ปัจจุบัน" class="flex-2">
-        <img src="images/2-organization-now.png" alt="ปัจจุบัน" />
-      </Slice>
-      <Slice label="อนาคต" class="flex-5">
-        <img src="images/2-organization-future.png" alt="อนาคต" />
-      </Slice>
-    </SlideFullContent>
     {#each advantage3 as { title, description }, index}
       <SlideSmall number={index + 1} {title}>
         {description}
@@ -172,3 +147,15 @@
     {/each}
   </HorizontalScroll>
 </Layout>
+
+<style>
+  svg {
+    @apply h-72 ml-auto;
+  }
+
+  @media (min-width: 768px) {
+    svg {
+      height: 40vw;
+    }
+  }
+</style>

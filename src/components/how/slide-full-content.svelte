@@ -7,7 +7,7 @@
 </script>
 
 <SlideFull>
-  <div class="flex-1 flex flex-col p-6 space-y-2">
+  <div class="flex-1 flex flex-col p-4 md:p-8 space-y-2 h-full">
     <div class="text-h6">
       <p>{text1}</p>
       <p class="text-white max-w-96">{text2}</p>
