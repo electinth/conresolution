@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply font-anuphan text-body15 md:text-body21;
 }

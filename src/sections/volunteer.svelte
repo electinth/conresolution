@@ -3,7 +3,7 @@
   import Layout from '../components/layout.svelte'
 </script>
 
-<Layout heading="ร่วมเป็นอาสาสมัคร" class="bg-green-3">
+<Layout id="volunteer" heading="ร่วมเป็นอาสาสมัคร" class="bg-green-3">
   <p class="text-white text-center w-full max-w-screen-md mx-auto">
     นอกจากร่วมลงชื่อแล้วคุณยังสามารถส่งต่อแคมเปญ “รื้อระบอบประยุทธ์
     สิ้นสุดระบบเผด็จการ” ได้โดยการร่วมเป็นส่วนหนึ่งของทีมงาน Re-solution

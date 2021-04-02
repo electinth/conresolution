@@ -45,15 +45,21 @@
         <div
           class="flex flex-col -md:(space-y-2) md:(flex-row space-x-2 w-screen-sm)"
         >
-          <Button class="bg-neon text-green-1 mx-auto">ลงชื่อ</Button>
-          <Button class="text-neon border border-neon mx-auto">
-            ร่วมเป็นอาสาสมัคร
-          </Button>
-        </div>
+          <a href="#sign" class="block flex-1 mx-auto">
+            <Button class="bg-neon text-green-1 mx-auto">ลงชื่อ</Button>
+          </a>
 
-        <a href="/#" class="text-b3 underline block">
-          อ่านคำอธิบายร่างแก้ไขเพิ่มเติมรัฐธรรมนูญรายมาตรา
-        </a>
+          <a href="#volunteer" class="block flex-1 mx-auto">
+            <Button class="text-neon border border-neon mx-auto">
+              ร่วมเป็นอาสาสมัคร
+            </Button>
+          </a>
+        </div>
+        <div>
+          <a href="/#" class="text-b3 underline">
+            อ่านคำอธิบายร่างแก้ไขเพิ่มเติมรัฐธรรมนูญรายมาตรา
+          </a>
+        </div>
       </div>
       <div class="flex justify-center pt-4">
         <Sharer />
