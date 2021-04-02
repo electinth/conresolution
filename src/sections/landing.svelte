@@ -30,7 +30,7 @@
       </div>
 
       <div
-        class="flex flex-col justify-center -md:space-y-4 md:(flex-row space-x-4)"
+        class="flex flex-col justify-center text-blue-1 -md:space-y-4 md:(flex-row space-x-4)"
       >
         <p class="text-h5 my-auto">มีแล้วกว่า</p>
         <p class="text-number">{countData.count.toLocaleString('th-TH')}</p>
