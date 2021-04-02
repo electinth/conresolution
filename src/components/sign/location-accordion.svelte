@@ -26,14 +26,14 @@
       <span class="text-h6 font-bold">{province}</span>
       <span class="text-b2">( {points.length} จุด )</span>
     </div>
-    <div>
+    <div class="flex">
       <svg
         width="17"
         height="13"
         viewBox="0 0 17 13"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        class="transform"
+        class="my-auto transform rotate-180 transition-transform duration-250"
         class:rotate-180={isOpen}
       >
         <path d="M1 1.5L8.5 10.5L16 1.5" stroke="#0E3431" stroke-width="2" />
