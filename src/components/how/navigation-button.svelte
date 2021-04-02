@@ -12,11 +12,11 @@
   }
 </script>
 
-<div class="absolute top-0 bottom-0 {divClassMap[direction]} flex z-10">
+<div class="absolute top-0 bottom-0 flex z-10 {divClassMap[direction]}">
   <button
-    class="bg-white {buttonClassMap[
+    class="bg-white my-auto text-center h-16 w-10 space-y-1 md:(h-24 w-16 space-y-2) opacity-90 flex flex-col items-center justify-center {buttonClassMap[
       direction
-    ]} my-auto text-center h-20 px-3 space-y-2 opacity-60"
+    ]}"
     on:click
   >
     <slot />
