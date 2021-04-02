@@ -1,12 +1,12 @@
 <script lang="ts">
   import HorizontalContainer from './horizontal-container.svelte'
-  import SlideFull from './slide-full.svelte'
+  import SlideBig from './slide-big.svelte'
 
   export let text1: string
   export let text2: string
 </script>
 
-<SlideFull>
+<SlideBig class="w-screen-md md:w-screen-lg">
   <div class="flex-1 flex flex-col p-4 md:p-8 space-y-2 h-full">
     <div class="text-h6">
       <p>{text1}</p>
@@ -16,4 +16,4 @@
       <HorizontalContainer><slot /></HorizontalContainer>
     </div>
   </div>
-</SlideFull>
+</SlideBig>
