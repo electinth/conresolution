@@ -5,7 +5,7 @@
 
 <section
   {id}
-  class="py-12 px-4 space-y-8 md:(px-8 py-20) {$$props.class || ''}"
+  class="py-12 px-2 space-y-6 md:(px-8 py-20 space-y-8) {$$props.class || ''}"
 >
   {#if heading}
     <h2 class="text-h4 text-white text-center max-w-screen-sm mx-auto">
