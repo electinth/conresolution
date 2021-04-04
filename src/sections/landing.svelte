@@ -25,7 +25,7 @@
   <div class="absolute inset-0 flex">
     <div class="m-auto space-y-6 text-green-3">
       <div class="space-y-2">
-        <h1 class="text-h4 max-w-md mx-auto">
+        <h1 class="text-h4 mx-auto max-w-xs md:max-w-md">
           ขอคนละชื่อ รื้อระบอบประยุทธ์ หยุดยื้อเวลาเผด็จการ
         </h1>
       </div>
@@ -44,14 +44,13 @@
 
       <div class="space-y-4">
         <div
-          class="flex flex-col -md:(space-y-2) md:(flex-row space-x-2 w-screen-sm)"
+          class="flex flex-col mx-auto -md:(space-y-2 max-w-64) md:(flex-row space-x-2 w-screen-sm)"
         >
-          <a href="#sign" class="block flex-1 mx-auto">
-            <Button class="bg-neon text-green-1 mx-auto">ลงชื่อ</Button>
+          <a href="#sign" class="flex-1">
+            <Button class="bg-neon text-green-1 w-full">ลงชื่อ</Button>
           </a>
-
-          <a href="#volunteer" class="block flex-1 mx-auto">
-            <Button class="text-neon border border-neon mx-auto">
+          <a href="#volunteer" class="flex-1">
+            <Button class="text-neon border border-neon">
               ร่วมเป็นอาสาสมัคร
             </Button>
           </a>
