@@ -43,7 +43,10 @@ const getCountData = async () => {
     (sum, record) => sum + record.get('count'),
     0
   )
-  const lastUpdated = countRecords[countRecords.length - 1].get('date')
+  const lastUpdated =
+    countRecords.length > 0
+      ? countRecords[countRecords.length - 1].get('date')
+      : null
 
   writeFileSync(
     OUTPUT_DIR + OUTPUT_COUNT,
