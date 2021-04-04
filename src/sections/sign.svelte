@@ -9,7 +9,11 @@
   let activeTab: Tab = 'post'
 </script>
 
-<Layout id="sign" heading="ร่วมลงชื่อ" class="bg-green-1 -md:-mx-1">
+<Layout
+  id="sign"
+  heading="ร่วมเป็นหนึ่งชื่อ รื้อระบอบประยุทธ์"
+  class="bg-green-1 -md:-mx-1"
+>
   <div class="flex flex-col w-full max-w-screen-lg mx-auto">
     <div class="flex flex-row space-x-1">
       <TabHead class="bg-blue-3" on:click={() => (activeTab = 'post')}
