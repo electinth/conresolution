@@ -9,6 +9,7 @@
   import advantage1 from '../assets/data/advantage1.json'
   import advantage2 from '../assets/data/advantage2.json'
   import advantage3 from '../assets/data/advantage3.json'
+  import advantage4 from '../assets/data/advantage4.json'
 </script>
 
 <Layout
@@ -16,7 +17,7 @@
   class="bg-green-1 overflow-x-hidden"
 >
   <HorizontalScroll>
-    <SlideCover heading1="ยุบ" heading2="วุฒิสภา">
+    <SlideCover heading1="ล้ม" heading2="วุฒิสภา">
       <svg
         slot="number"
         viewBox="0 0 101 249"
@@ -54,10 +55,7 @@
   </HorizontalScroll>
 
   <HorizontalScroll>
-    <SlideCover
-      heading1="ยุติ"
-      heading2="ที่มาแบบเก่าของศาล รัฐธรรมนูญและองค์กรอิสระ"
-    >
+    <SlideCover heading1="โละ" heading2="ศาลรัฐธรรมนูญ องค์กรอิสระ">
       <svg
         slot="number"
         viewBox="0 0 164 255"
@@ -115,7 +113,7 @@
   </HorizontalScroll>
 
   <HorizontalScroll>
-    <SlideCover heading1="ยกเลิก" heading2="ยุทธศาสตร์ชาติ">
+    <SlideCover heading1="เลิก" heading2="ยุทธศาสตร์ชาติ แผนปฏิรูปประเทศ">
       <svg
         slot="number"
         viewBox="0 0 150 262"
@@ -136,9 +134,24 @@
         <img src="images/3-now.png" alt="ปัจจุบัน" />
       </Slice>
       <Slice label="อนาคต" class="flex-1">
-        <p>ทำให้นโยบายยืดหยุ่น ก้าวทันโลก และตอบสนองต่อความต้องการของประชาชน</p>
+        <p>
+          <span class="font-bold">"ทำได้ทันที ทำไม่ดีก็โดนไล่"</span> รัฐมีความยืดหยุ่นในการออกแบบนโยบายให้สอดรับกับสถานการณ์
+        </p>
         <img src="images/3-future.png" alt="อนาคต" />
       </Slice>
+    </SlideCover>
+    {#each advantage4 as { title, description }, index}
+      <SlideSmall number={index + 1} {title}>
+        {description}
+      </SlideSmall>
+    {/each}
+  </HorizontalScroll>
+
+  <HorizontalScroll>
+    <SlideCover heading1="ล้าง" heading2="มรดกรัฐประหาร">
+      <p class="my-auto">
+        หยุดวงจรอุบาทว์ขวางประชาธิปไตย ยกเลิกผลพวงการรัฐประหารโดย คสช. ทั้งหมด
+      </p>
     </SlideCover>
     {#each advantage3 as { title, description }, index}
       <SlideSmall number={index + 1} {title}>
