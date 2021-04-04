@@ -5,6 +5,7 @@ require('dotenv').config()
 
 const TABLE_COUNT = 'Count'
 const TABLE_LOCATION = 'Location'
+const TABLE_PROVINCES = 'Provinces'
 const OUTPUT_DIR = './src/assets/data/'
 const OUTPUT_COUNT = 'count.json'
 const OUTPUT_LOCATION = 'location.json'
@@ -35,47 +36,57 @@ const fetchRecords = (table) =>
       )
   })
 
+const getCountData = async () => {
+  const countRecords = await fetchRecords(base(TABLE_COUNT))
+
+  const count = countRecords.reduce(
+    (sum, record) => sum + record.get('count'),
+    0
+  )
+  const lastUpdated = countRecords[countRecords.length - 1].get('date')
+
+  writeFileSync(
+    OUTPUT_DIR + OUTPUT_COUNT,
+    JSON.stringify({ count, lastUpdated })
+  )
+}
+
+const getLocationData = async () => {
+  const locationRecords = await fetchRecords(base(TABLE_LOCATION))
+  const provinceRecords = await fetchRecords(base(TABLE_PROVINCES))
+
+  const provinceIds = [
+    ...new Set(locationRecords.map((record) => record.get('province')[0])),
+  ]
+
+  const locations = provinceIds.map((provinceId) => ({
+    province: provinceRecords.find(({ id }) => id === provinceId).get('name'),
+    points: locationRecords
+      .filter((record) => record.get('province')[0] === provinceId)
+      .map(({ fields: { province, ...rest } }) => rest),
+  }))
+
+  const lastUpdated = locationRecords
+    .map((record) => record.get('lastUpdated'))
+    .sort()[locationRecords.length - 1]
+
+  writeFileSync(
+    OUTPUT_DIR + OUTPUT_LOCATION,
+    JSON.stringify({
+      provinceCount: provinceIds.length,
+      pointCount: locationRecords.length,
+      lastUpdated,
+      locations,
+    })
+  )
+}
+
 try {
   if (!existsSync(OUTPUT_DIR)) {
     mkdirSync(OUTPUT_DIR)
   }
 
-  fetchRecords(base(TABLE_COUNT)).then((records) => {
-    const count = records.reduce((sum, record) => sum + record.get('count'), 0)
-    const lastUpdated = records[records.length - 1].get('date')
-
-    writeFileSync(
-      OUTPUT_DIR + OUTPUT_COUNT,
-      JSON.stringify({ count, lastUpdated })
-    )
-  })
-
-  fetchRecords(base(TABLE_LOCATION)).then((records) => {
-    const provinces = [
-      ...new Set(records.map((record) => record.get('province'))),
-    ]
-
-    const locations = provinces.map((province) => ({
-      province,
-      points: records
-        .filter((record) => record.fields.province === province)
-        .map(({ fields: { province: provinceField, ...rest } }) => rest),
-    }))
-
-    const lastUpdated = records
-      .map((record) => record.get('lastUpdated'))
-      .sort()[records.length - 1]
-
-    writeFileSync(
-      OUTPUT_DIR + OUTPUT_LOCATION,
-      JSON.stringify({
-        provinceCount: provinces.length,
-        pointCount: records.length,
-        lastUpdated,
-        locations,
-      })
-    )
-  })
+  Promise.all([getCountData(), getLocationData()])
 } catch (err) {
   console.error(err)
   process.exit(1)
