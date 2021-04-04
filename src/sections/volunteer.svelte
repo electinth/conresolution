@@ -1,4 +1,5 @@
 <script>
+  import ExternalLink from '../components/external-link.svelte'
   import Button from '../components/button.svelte'
   import Layout from '../components/layout.svelte'
 </script>
@@ -11,17 +12,18 @@
     หรือหากคุณมีพื้นที่-สนใจอยากช่วยตั้งโต๊ะด้วยตัวเองก็สามารถทำได้เช่นกัน
   </p>
   <div class="flex flex-row space-x-2 w-full max-w-screen-lg mx-auto">
-    <a
+    <ExternalLink
       href="https://docs.google.com/forms/d/e/1FAIpQLSdtkFfvv2EduFgawSBK_w3QWccO7y5SkW14pR_ABx5s7oETOw/viewform"
       class="flex-1"
     >
       <Button class="bg-blue-3 text-green-1">สนใจเป็นอาสาสมัคร</Button>
-    </a>
-    <a
+    </ExternalLink>
+    <ExternalLink
       href="https://docs.google.com/forms/d/e/1FAIpQLSeqfI9lkBlv4R1fzpH0C6-urxqZJPpR0CDqKwVpDM2OOS8xkw/viewform"
       class="flex-1"
     >
-      <Button class="bg-blue-3 text-green-1">สนใจเปิดโต๊ะลงชื่อ</Button></a
+      <Button class="bg-blue-3 text-green-1">สนใจเปิดโต๊ะลงชื่อ</Button
+      ></ExternalLink
     >
   </div>
 </Layout>

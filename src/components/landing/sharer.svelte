@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte'
+  import ExternalLink from '../external-link.svelte'
 
   let url: string
 
@@ -10,35 +11,23 @@
 
 <div class="flex flex-row space-x-1 md:space-x-2">
   <p class="text-b4 text-white my-auto">แชร์</p>
-  <a
-    href="http://www.facebook.com/sharer/sharer.php?u={url}"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
+  <ExternalLink href="http://www.facebook.com/sharer/sharer.php?u={url}">
     <svg viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M10.6666 0C5.11004 0 0.60553 4.50451 0.60553 10.0611C0.60553 15.0828 4.28471 19.2452 9.09459 20V12.9694H6.54001V10.0611H9.09459V7.84452C9.09459 5.32296 10.5967 3.93012 12.8948 3.93012C13.9957 3.93012 15.147 4.12663 15.147 4.12663V6.60261H13.8783C12.6286 6.60261 12.2387 7.37822 12.2387 8.17387V10.0611H15.0291L14.583 12.9694H12.2387V20C17.0486 19.2452 20.7278 15.083 20.7278 10.0611C20.7278 4.50451 16.2232 0 10.6666 0Z"
         fill="white"
       />
     </svg>
-  </a>
-  <a
-    href="https://twitter.com/intent/tweet?url={url}"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
+  </ExternalLink>
+  <ExternalLink href="https://twitter.com/intent/tweet?url={url}">
     <svg viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M10.7278 0C5.22775 0 0.727753 4.5 0.727753 10C0.727753 15.5 5.22775 20 10.7278 20C16.2278 20 20.7278 15.5 20.7278 10C20.7278 4.5 16.2278 0 10.7278 0ZM15.5278 7.55C15.5278 7.65 15.5278 7.75 15.5278 7.85C15.5278 11.1 13.0278 14.9 8.47775 14.9C7.07775 14.9 5.77775 14.5 4.67775 13.8C4.87775 13.8 5.07775 13.85 5.27775 13.85C6.42775 13.85 7.47775 13.45 8.32775 12.8C7.22775 12.8 6.32775 12.05 6.02775 11.1C6.17775 11.15 6.32775 11.15 6.47775 11.15C6.72775 11.15 6.92775 11.1 7.12775 11.05C5.97775 10.8 5.12775 9.8 5.12775 8.65C5.12775 8.65 5.12775 8.65 5.12775 8.6C5.47775 8.8 5.82775 8.9 6.22775 8.9C5.62775 8.4 5.22775 7.65 5.22775 6.8C5.22775 6.35 5.32775 5.9 5.57775 5.55C6.77775 7.05 8.62775 8.05 10.6778 8.15C10.6278 7.95 10.6278 7.8 10.6278 7.6C10.6278 6.25 11.7278 5.15 13.0778 5.15C13.7778 5.15 14.4278 5.45 14.8778 5.95C15.4278 5.85 15.9778 5.65 16.4278 5.35C16.2278 5.95 15.8278 6.4 15.3278 6.7C15.8278 6.65 16.3278 6.5 16.7278 6.3C16.4278 6.75 15.9778 7.2 15.5278 7.55Z"
         fill="white"
       />
     </svg>
-  </a>
-  <a
-    href="https://social-plugins.line.me/lineit/share?url={url}"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
+  </ExternalLink>
+  <ExternalLink href="https://social-plugins.line.me/lineit/share?url={url}">
     <svg viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
       <ellipse cx="10.1222" cy="10" rx="7.5" ry="7.5" fill="#0E3431" />
       <path
@@ -62,7 +51,7 @@
         fill="white"
       />
     </svg>
-  </a>
+  </ExternalLink>
 </div>
 
 <style>

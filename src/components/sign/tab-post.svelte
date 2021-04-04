@@ -1,5 +1,6 @@
 <script>
   import Button from '../button.svelte'
+  import ExternalLink from '../external-link.svelte'
   import PostStep from './post-step.svelte'
   import TabBody from './tab-body.svelte'
 </script>
@@ -59,24 +60,23 @@
         <li>สามารถส่งแบบธรรมดา ไม่จำเป็นต้องแบบด่วนพิเศษหรือลงทะเบียนตอบรับ</li>
       </ul>
     </PostStep>
-    <div class="flex flex-col text-center space-y-2">
-      <a
+    <div class="flex flex-col text-center space-y-4 text-b2">
+      <ExternalLink
         href="https://drive.google.com/drive/u/0/folders/1c8sxaw8SileWT9U6GildCO1klR77BUgm"
-        class="text-b2 py-2"
       >
-        <Button class="bg-green-3 text-white">ดาวน์โหลดแบบฟอร์ม</Button></a
+        <Button class="bg-green-3 text-white">ดาวน์โหลดแบบฟอร์ม</Button
+        ></ExternalLink
       >
-      <a
+      <ExternalLink
         href="https://drive.google.com/drive/u/0/folders/1c8sxaw8SileWT9U6GildCO1klR77BUgm"
-        class="text-b2 py-2">ดูตัวอย่างการกรอกแบบฟอร์ม</a
+        >ดูตัวอย่างการกรอกแบบฟอร์ม</ExternalLink
       >
-      <a
+      <ExternalLink
         href="https://drive.google.com/drive/u/0/folders/1c8sxaw8SileWT9U6GildCO1klR77BUgm"
-        class="text-b2 py-2"
       >
         <Button class="text-green-2 border border-green-2"
           >ดูร่างแก้ไขรัฐธรรมนูญฉบับเต็ม</Button
-        ></a
+        ></ExternalLink
       >
     </div>
   </TabBody>

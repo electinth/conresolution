@@ -14,6 +14,7 @@
 </script>
 
 <script lang="ts">
+  import ExternalLink from '../external-link.svelte'
   import { formatThaiDate } from '../../utils/date'
   import Info from './info.svelte'
 
@@ -54,16 +55,14 @@
       </Info>
     {/if}
     {#if point.mapLink}
-      <a
+      <ExternalLink
         href={point.mapLink}
         class="text-b3 underline  {point.isTemporary
           ? 'text-orange'
           : 'text-blue-1'}"
-        target="_blank"
-        rel="noopener noreferrer"
       >
         ดูแผนที่
-      </a>
+      </ExternalLink>
     {/if}
   </div>
 </div>
