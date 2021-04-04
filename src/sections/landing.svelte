@@ -25,8 +25,9 @@
   <div class="absolute inset-0 flex">
     <div class="m-auto space-y-6 text-green-3">
       <div class="space-y-2">
-        <h1 class="text-h4">ร่วมรื้อระบอบประยุทธ์</h1>
-        <h1 class="text-h4">สิ้นสุดระบบเผด็จการ</h1>
+        <h1 class="text-h4 max-w-md mx-auto">
+          ขอคนละชื่อ รื้อระบอบประยุทธ์ หยุดยื้อเวลาเผด็จการ
+        </h1>
       </div>
 
       <div
@@ -56,8 +57,13 @@
           </a>
         </div>
         <div>
-          <a href="/#" class="text-b3 underline">
-            อ่านคำอธิบายร่างแก้ไขเพิ่มเติมรัฐธรรมนูญรายมาตรา
+          <a
+            href="https://drive.google.com/drive/u/0/folders/1c8sxaw8SileWT9U6GildCO1klR77BUgm"
+            class="text-b3 underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            อ่านร่างรัฐธรรมนูญแก้ไขเพิ่มเติม ฉบับเต็ม
           </a>
         </div>
       </div>
