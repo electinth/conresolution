@@ -3,17 +3,25 @@
   import Layout from '../components/layout.svelte'
 </script>
 
-<Layout id="volunteer" heading="ร่วมเป็นอาสาสมัคร" class="bg-green-3">
+<Layout id="volunteer" heading="ร่วมเป็นอาสาสมัครกับเรา" class="bg-green-3">
   <p class="text-white text-center w-full max-w-screen-md mx-auto">
-    นอกจากร่วมลงชื่อแล้วคุณยังสามารถส่งต่อแคมเปญ “รื้อระบอบประยุทธ์
-    สิ้นสุดระบบเผด็จการ” ได้โดยการร่วมเป็นส่วนหนึ่งของทีมงาน Re-solution
-    ในการตั้งโต๊ะลงชื่อ
-    หรือสามารถตั้งโต๊ะได้ด้วยตัวเองโดยใช้คู่มือที่เราเตรียมไว้ให้
+    นอกจากร่วมลงชื่อแล้ว คุณยังสามารถร่วม "รื้อระบอบประยุทธ์
+    หยุดยื้อเวลาเผด็จการ" ไปอีกขึ้น
+    โดยการร่วมเป็นอาสาสมัครในการตั้งโต๊ะลงชื่อของ Resolution
+    หรือหากคุณมีพื้นที่-สนใจอยากช่วยตั้งโต๊ะด้วยตัวเองก็สามารถทำได้เช่นกัน
   </p>
   <div class="flex flex-row space-x-2 w-full max-w-screen-lg mx-auto">
-    <Button class="bg-blue-3 text-green-1">สมัครเป็นทีมงาน</Button>
-    <Button class="bg-blue-3 text-green-1"
-      >ดูคู่มือการเปิดโต๊ะรับร่างด้วยตัวเอง</Button
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSdtkFfvv2EduFgawSBK_w3QWccO7y5SkW14pR_ABx5s7oETOw/viewform"
+      class="flex-1"
+    >
+      <Button class="bg-blue-3 text-green-1">สนใจเป็นอาสาสมัคร</Button>
+    </a>
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSeqfI9lkBlv4R1fzpH0C6-urxqZJPpR0CDqKwVpDM2OOS8xkw/viewform"
+      class="flex-1"
+    >
+      <Button class="bg-blue-3 text-green-1">สนใจเปิดโต๊ะลงชื่อ</Button></a
     >
   </div>
 </Layout>
