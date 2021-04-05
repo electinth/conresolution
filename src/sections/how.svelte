@@ -72,7 +72,7 @@
           บุคคลที่ดำรงตำแหน่งในองค์กรเหล่านี้ไม่มีความยึดโยงกับ ประชาชน
           เพราะถูกคัดเลือก โดย“คณะกรรมการสรรหา” และ “สมาชิกวุฒิสภา” (ส.ว.)
         </p>
-        <img src="images/2-now.png" alt="ปัจจุบัน" />
+        <img src="images/2-now.png" alt="ปัจจุบัน" class="-lg:max-h-48" />
       </Slice>
       <Slice label="อนาคต" class="flex-1">
         <p>
@@ -80,7 +80,7 @@
           ที่มาจากการเลือกตั้งของ
           ประชาชนร่วมคัดเลือกบุคคลเข้าไปทำหน้าที่ในศาลรัฐธรรมนูญ และองค์กรอิสระ
         </p>
-        <img src="images/2-future.png" alt="อนาคต" />
+        <img src="images/2-future.png" alt="อนาคต" class="-lg:max-h-48" />
       </Slice>
     </SlideCover>
     <SlideFullContent
