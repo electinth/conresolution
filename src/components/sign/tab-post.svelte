@@ -9,8 +9,11 @@
   <TabBody class="divide-blue-2 divide-y max-w-screen-md">
     <PostStep number="1">
       <p>
-        ดาวน์โหลด แบบฟอร์ม <span class="font-bold"
-          >เอกสารการลงลายมือชื่อของผู้เข้าชื่อเสนอกฎหมาย</span
+        ดาวน์โหลด แบบฟอร์ม <ExternalLink
+          href="https://progressivemovement.in.th/wp-content/uploads/2021/04/เอกสารการลงลายมือชื่อของผู้เข้าชื่อเสนอกฎหมาย.pdf"
+          class="font-bold inline hover:underline"
+        >
+          เอกสารการลงลายมือชื่อของผู้เข้าชื่อเสนอกฎหมาย</ExternalLink
         >
         หรือ เอกสารหมายเลข 7 และพิมพ์ลงกระดาษ A4
       </p>

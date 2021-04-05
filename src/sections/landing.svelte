@@ -45,7 +45,7 @@
       <div>
         <a
           href="https://progressivemovement.in.th/wp-content/uploads/2021/04/Draft_Constitution_Resolution2564.pdf"
-          class="text-b4 underline bg-white px-2 py-1 bg-opacity-50 rounded"
+          class="text-b4 bg-white px-2 py-1 bg-opacity-50 rounded hover:underline"
           target="_blank"
           rel="noopener noreferrer"
         >
