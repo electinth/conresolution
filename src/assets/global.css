@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  @apply font-anuphan text-body15 md:text-body21;
+  @apply font-baijamjuree text-body15 md:text-body21;
 }
 
 .text-number {
@@ -35,17 +35,17 @@ body {
 }
 
 .text-b1 {
-  @apply font-anuphan text-body15 md:text-body21;
+  @apply font-baijamjuree text-body15 md:text-body21;
 }
 
 .text-b2 {
-  @apply font-anuphan text-body12 md:text-body17;
+  @apply font-baijamjuree text-body12 md:text-body17;
 }
 
 .text-b3 {
-  @apply font-anuphan text-body10 md:text-body15;
+  @apply font-baijamjuree text-body10 md:text-body15;
 }
 
 .text-b4 {
-  @apply font-anuphan text-body8 md:text-body12;
+  @apply font-baijamjuree text-body8 md:text-body12;
 }

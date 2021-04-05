@@ -14,7 +14,7 @@ module.exports = {
     },
     fontFamily: {
       anakotmai: ['Anakotmai', 'sans-serif'],
-      anuphan: ['Anuphan', 'sans-serif'],
+      baijamjuree: ['Bai Jamjuree', 'sans-serif'],
     },
     fontSize: {
       head120: ['120px', '144px'],

@@ -5,12 +5,12 @@
 }
 
 @font-face {
-  font-family: 'Anuphan';
-  src: url('./Anuphan-Regular.otf') format('woff');
+  font-family: 'Bai Jamjuree';
+  src: url('./BaiJamjuree-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Anuphan';
+  font-family: 'Bai Jamjuree';
   font-weight: bold;
-  src: url('./Anuphan-Bold.otf') format('woff');
+  src: url('./BaiJamjuree-Bold.ttf') format('truetype');
 }
