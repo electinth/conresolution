@@ -1,6 +1,4 @@
 <script lang="ts">
-  import { compute_rest_props } from 'svelte/internal'
-
   export let href: string
 </script>
 
@@ -8,7 +6,7 @@
   {href}
   target="_blank"
   rel="noopener noreferrer"
-  class="block {$$props.class} ''}"
+  class="block {$$props.class || ''}"
 >
   <slot />
 </a>
