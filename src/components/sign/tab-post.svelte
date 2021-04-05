@@ -64,20 +64,28 @@
       <ExternalLink
         href="https://drive.google.com/drive/u/0/folders/1c8sxaw8SileWT9U6GildCO1klR77BUgm"
       >
-        <Button class="bg-green-3 text-white">ดาวน์โหลดแบบฟอร์ม</Button
+        <Button
+          class="bg-green-3 text-white border-green-3 hover:(bg-black text-white border-black)"
+          >ดาวน์โหลดแบบฟอร์ม</Button
         ></ExternalLink
       >
       <ExternalLink
         href="https://drive.google.com/drive/u/0/folders/1c8sxaw8SileWT9U6GildCO1klR77BUgm"
-        >ดูตัวอย่างการกรอกแบบฟอร์ม</ExternalLink
+      >
+        <Button class="text-green-2 border border-green-2 hover:bg-white"
+          >ดูตัวอย่างและวิธีการกรอกแบบฟอร์ม
+        </Button></ExternalLink
       >
       <ExternalLink
         href="https://drive.google.com/drive/u/0/folders/1c8sxaw8SileWT9U6GildCO1klR77BUgm"
-      >
-        <Button class="text-green-2 border border-green-2"
-          >ดูร่างแก้ไขรัฐธรรมนูญฉบับเต็ม</Button
-        ></ExternalLink
-      >
+        class="text-b3 text-green-2"
+        >ดูร่างรัฐธรรมนูญแก้ไขเพิ่มเติม ฉบับเต็ม
+      </ExternalLink>
+      <ExternalLink
+        href="https://drive.google.com/drive/u/0/folders/1c8sxaw8SileWT9U6GildCO1klR77BUgm"
+        class="text-b3 text-green-2"
+        >แผ่นพับ ทำไมต้องรื้อระบอบประยุทธ์?
+      </ExternalLink>
     </div>
   </TabBody>
 </div>
