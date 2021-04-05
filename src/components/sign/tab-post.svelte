@@ -66,7 +66,7 @@
     </PostStep>
     <div class="flex flex-col text-center space-y-4 text-b2">
       <ExternalLink
-        href="https://drive.google.com/file/d/1OoUqd-fPzgb_YLbBOvQRhjKIAWQ2S8U5/view?usp=sharing"
+        href="https://progressivemovement.in.th/wp-content/uploads/2021/04/เอกสารการลงลายมือชื่อของผู้เข้าชื่อเสนอกฎหมาย.pdf"
       >
         <Button
           class="bg-green-3 text-white border-green-3 hover:(bg-black text-white border-black)"
@@ -74,19 +74,19 @@
         ></ExternalLink
       >
       <ExternalLink
-        href="https://drive.google.com/file/d/1dUTF1-agyw0sWXbYY-buPkGfpj_Au6Xb/view?usp=sharing"
+        href="https://progressivemovement.in.th/wp-content/uploads/2021/04/A4-ขอ1ชื่อรื้อระบอบประยุทธ์-edited.pdf"
       >
         <Button class="text-green-2 border border-green-2 hover:bg-white"
           >ดูตัวอย่างและวิธีการกรอกแบบฟอร์ม
         </Button></ExternalLink
       >
       <ExternalLink
-        href="https://drive.google.com/file/d/1WHyz8F4BcJjOLEuPESrkGE9wTZM-BA8l/view?usp=sharing"
+        href="https://progressivemovement.in.th/wp-content/uploads/2021/04/Draft_Constitution_Resolution2564.pdf"
         class="text-b3 text-green-2 hover:underline"
         >ดูร่างรัฐธรรมนูญแก้ไขเพิ่มเติม ฉบับเต็ม
       </ExternalLink>
       <ExternalLink
-        href="https://drive.google.com/file/d/1KXOO9W8Qqs6So9zticwDQgu3kSg7fYVn/view?usp=sharing"
+        href="https://progressivemovement.in.th/wp-content/uploads/2021/04/แผ่นพับ_Createoutline.pdf"
         class="text-b3 text-green-2 hover:underline"
         >แผ่นพับ ทำไมต้องรื้อระบอบประยุทธ์?
       </ExternalLink>
