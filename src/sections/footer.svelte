@@ -5,6 +5,9 @@
   const links = [
     { alt: 'Resolution', src: 'images/logo-resolution.png', href: '#' },
     { alt: 'iLaw', src: 'images/logo-ilaw.png', href: '#' },
+    { alt: 'CONLAB', src: 'images/logo-conlab.png', href: '#' },
+    { alt: 'คณะก้าวหน้า', src: 'images/logo-klaona.png', href: '#' },
+    { alt: 'พรรคก้าวไหล', src: 'images/logo-klaokrai.png', href: '#' },
     { alt: 'ELECT', src: 'images/logo-elect.png', href: '#' },
   ]
 </script>
@@ -14,7 +17,9 @@
     <FollowUs />
   </div>
 
-  <div class="flex justify-around py-6 md:py-12 w-full max-w-screen-xl mx-auto">
+  <div
+    class="flex justify-between py-6 md:py-12 w-full max-w-screen-xl mx-auto"
+  >
     {#each links as { alt, src, href }}
       <a
         {href}
