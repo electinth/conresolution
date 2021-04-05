@@ -47,7 +47,7 @@
           class="flex flex-col mx-auto -md:(space-y-2 max-w-64) md:(flex-row space-x-2 w-screen-sm)"
         >
           <a href="#sign" class="flex-1">
-            <Button class="bg-neon text-green-1 w-full">ลงชื่อ</Button>
+            <Button class="bg-neon  w-full">ลงชื่อ</Button>
           </a>
           <a href="#volunteer" class="flex-1">
             <Button class="text-neon border border-neon">

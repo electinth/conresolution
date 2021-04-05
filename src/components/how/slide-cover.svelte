@@ -17,7 +17,7 @@
       </div>
       <div class="absolute inset-0 flex flex-col justify-center p-6 space-y-4">
         <p class="text-h4 text-green-3">{heading1}</p>
-        <p class="text-h4 text-green-1">{heading2}</p>
+        <p class="text-h4 ">{heading2}</p>
       </div>
     </div>
     <div class="w-2/3 py-8 col-span-2 bg-blue-1">

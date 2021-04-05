@@ -16,14 +16,13 @@
       href="https://docs.google.com/forms/d/e/1FAIpQLSdtkFfvv2EduFgawSBK_w3QWccO7y5SkW14pR_ABx5s7oETOw/viewform"
       class="flex-1"
     >
-      <Button class="bg-blue-3 text-green-1">สนใจเป็นอาสาสมัคร</Button>
+      <Button class="bg-blue-3 ">สนใจเป็นอาสาสมัคร</Button>
     </ExternalLink>
     <ExternalLink
       href="https://docs.google.com/forms/d/e/1FAIpQLSeqfI9lkBlv4R1fzpH0C6-urxqZJPpR0CDqKwVpDM2OOS8xkw/viewform"
       class="flex-1"
     >
-      <Button class="bg-blue-3 text-green-1">สนใจเปิดโต๊ะลงชื่อ</Button
-      ></ExternalLink
+      <Button class="bg-blue-3 ">สนใจเปิดโต๊ะลงชื่อ</Button></ExternalLink
     >
   </div>
 </Layout>

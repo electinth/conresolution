@@ -14,7 +14,7 @@
 
 <Layout
   heading="เพื่อทำลายระบอบประยุทธ์ เราสามารถริเริ่มได้ด้วยการแก้รัฐธรรมนูญภายใต้หลักคิด 3 ข้อ"
-  class="bg-green-1 overflow-x-hidden"
+  class="bg-black overflow-x-hidden"
 >
   <HorizontalScroll>
     <SlideCover heading1="ล้ม" heading2="วุฒิสภา">

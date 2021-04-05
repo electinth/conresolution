@@ -9,7 +9,7 @@
   ]
 </script>
 
-<Layout class="bg-green-1 divide-white divide-y-1">
+<Layout class="bg-black divide-white divide-y-1">
   <div class="flex justify-center">
     <FollowUs />
   </div>

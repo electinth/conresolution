@@ -63,7 +63,7 @@
   {/if}
   {#if showNextButton}
     <NavigationButton direction="next" on:click={() => swiper.slideNext()}>
-      <p class="text-b3 text-green-1 font-bold">
+      <p class="text-b3  font-bold">
         ประเทศ<br />จะดีขึ้น<br />อย่างไร
       </p>
       <svg
