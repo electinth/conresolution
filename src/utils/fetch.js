@@ -58,14 +58,19 @@ const getLocationData = async () => {
   const locationRecords = await fetchRecords(base(TABLE_LOCATION))
   const provinceRecords = await fetchRecords(base(TABLE_PROVINCES))
 
-  const provinceIds = [
+  const provinces = [
     ...new Set(locationRecords.map((record) => record.get('province')[0])),
   ]
+    .map((id) => ({
+      id,
+      name: provinceRecords.find((record) => id === record.id).get('name'),
+    }))
+    .sort((a, z) => a.name.localeCompare(z.name))
 
-  const locations = provinceIds.map((provinceId) => ({
-    province: provinceRecords.find(({ id }) => id === provinceId).get('name'),
+  const locations = provinces.map(({ id, name }) => ({
+    province: name,
     points: locationRecords
-      .filter((record) => record.get('province')[0] === provinceId)
+      .filter((record) => record.get('province')[0] === id)
       .map(({ fields: { province, ...rest } }) => rest),
   }))
 
@@ -76,7 +81,7 @@ const getLocationData = async () => {
   writeFileSync(
     OUTPUT_DIR + OUTPUT_LOCATION,
     JSON.stringify({
-      provinceCount: provinceIds.length,
+      provinceCount: provinces.length,
       pointCount: locationRecords.length,
       lastUpdated,
       locations,
