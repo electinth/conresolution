@@ -84,14 +84,15 @@
         </Button></ExternalLink
       >
       <ExternalLink
+        href="https://progressivemovement.in.th/wp-content/uploads/2021/04/แผ่นพับ_Createoutline.pdf"
+        ><Button class="text-green-2 border border-green-2 hover:bg-white"
+          >แผ่นพับ ทำไมต้องรื้อระบอบประยุทธ์?
+        </Button>
+      </ExternalLink>
+      <ExternalLink
         href="https://progressivemovement.in.th/wp-content/uploads/2021/04/Draft_Constitution_Resolution2564.pdf"
         class="text-b3 text-green-2 hover:underline"
         >ดูร่างรัฐธรรมนูญแก้ไขเพิ่มเติม ฉบับเต็ม
-      </ExternalLink>
-      <ExternalLink
-        href="https://progressivemovement.in.th/wp-content/uploads/2021/04/แผ่นพับ_Createoutline.pdf"
-        class="text-b3 text-green-2 hover:underline"
-        >แผ่นพับ ทำไมต้องรื้อระบอบประยุทธ์?
       </ExternalLink>
     </div>
   </TabBody>
