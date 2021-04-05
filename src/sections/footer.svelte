@@ -39,10 +39,10 @@
   </div>
 
   <div
-    class="flex justify-between py-6 md:py-12 w-full max-w-screen-xl mx-auto"
+    class="grid grid-cols-2 py-6 md:(py-12 grid-cols-6) w-full max-w-screen-xl mx-auto"
   >
     {#each links as { alt, src, href }}
-      <ExternalLink {href} class="my-auto max-w-16 md:max-w-24">
+      <ExternalLink {href} class="m-auto max-w-16 -md:py-3 md:max-w-24">
         <img {src} {alt} />
       </ExternalLink>
     {/each}
