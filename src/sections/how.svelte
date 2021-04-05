@@ -149,9 +149,26 @@
 
   <HorizontalScroll>
     <SlideCover heading1="ล้าง" heading2="มรดกรัฐประหาร">
-      <p class="my-auto">
-        หยุดวงจรอุบาทว์ขวางประชาธิปไตย ยกเลิกผลพวงการรัฐประหารโดย คสช. ทั้งหมด
-      </p>
+      <svg
+        slot="number"
+        viewBox="0 0 295 498"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M295.435 497.55H180.793V396.686H0V291.626L150.18 0H295.435V497.55ZM186.906 289.71V196.585C186.906 192.291 187.173 185.426 187.706 175.965C188.24 166.505 189.04 154.376 190.132 139.555L170.144 182.103C160.246 202.94 150.374 222.346 140.501 240.273C130.604 258.223 120.731 274.694 110.858 289.734H186.906V289.71Z"
+          fill="white"
+        />
+      </svg>
+
+      <div
+        class="flex flex-col space-y-6 m-auto text-center p-3 max-w-xs md:max-w-md"
+      >
+        <p>
+          หยุดวงจรอุบาทว์ขวางประชาธิปไตย ยกเลิกผลพวงการรัฐประหารโดย คสช. ทั้งหมด
+        </p>
+        <img src="images/4.png" alt="ยกเลิกผลพวงการรัฐประหารโดย คสช." />
+      </div>
     </SlideCover>
     {#each advantage3 as { title, description }, index}
       <SlideSmall number={index + 1} {title}>

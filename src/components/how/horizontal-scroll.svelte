@@ -9,7 +9,7 @@
   let showPrevButton: boolean = false
   let showNextButton: boolean = true
 
-  const transitionEnd = (swiper: Swiper) => {
+  const transitionStart = (swiper: Swiper) => {
     showPrevButton = !swiper.isBeginning
     showNextButton = !swiper.isEnd
   }
@@ -26,7 +26,7 @@
       spaceBetween: 12,
       freeMode: true,
       on: {
-        transitionEnd,
+        transitionStart,
       },
     })
   })
