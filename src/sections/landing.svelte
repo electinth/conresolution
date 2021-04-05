@@ -64,6 +64,6 @@
 
 <style>
   section {
-    background-image: url('images/landing-bg.jpg');
+    background-image: url('/images/landing-bg.jpg');
   }
 </style>

@@ -13,7 +13,7 @@
 </script>
 
 <Layout
-  heading="เพื่อทำลายระบอบประยุทธ์ เราสามารถริเริ่มได้ด้วยการแก้รัฐธรรมนูญภายใต้หลักคิด 3 ข้อ"
+  heading="ผนึกกำลังประชาชนเข้าชื่อแก้รัฐธรรมนูญ เพื่อจัดการกับ 4 ประเด็นหลักที่เป็นอุปสรรคของการเมืองไทยในปัจจุบัน"
   class="bg-black overflow-x-hidden"
 >
   <HorizontalScroll>
@@ -42,7 +42,7 @@
         <p>
           <span class="font-bold">“สภาเดี่ยว”</span>
           ที่มีแค่สมาชิกสภาผู้แทนราษฎร (สส.) 500 คน ซึ่ง<span class="font-bold"
-            >มาจากการเลือกตั้งของ ประชาชนทั้งหมด</span
+            >มาจากการเลือกตั้งของประชาชนทั้งหมด</span
           >
         </p>
       </Slice>
@@ -84,7 +84,7 @@
       </Slice>
     </SlideCover>
     <SlideFullContent
-      text1="กระบวนการสรรหา และ รับรอง"
+      text1="กระบวนการสรรหา และรับรอง"
       text2="ตุลาการศาลรัฐธรรมนูญ"
     >
       <Slice label="ปัจจุบัน" class="flex-3">
@@ -95,7 +95,7 @@
       </Slice>
     </SlideFullContent>
     <SlideFullContent
-      text1="กระบวนการสรรหา และ รับรอง"
+      text1="กระบวนการสรรหา และรับรอง"
       text2="กรรมการองค์กรอิสระ (กกต. / ปปช. / สตง. / ผู้ตรวจการแผ่นดิน / กสม.)"
     >
       <Slice label="ปัจจุบัน" class="flex-2">
@@ -140,7 +140,7 @@
         <img src="images/3-future.png" alt="อนาคต" />
       </Slice>
     </SlideCover>
-    {#each advantage4 as { title, description }, index}
+    {#each advantage3 as { title, description }, index}
       <SlideSmall number={index + 1} {title}>
         {description}
       </SlideSmall>
@@ -170,7 +170,7 @@
         <img src="images/4.png" alt="ยกเลิกผลพวงการรัฐประหารโดย คสช." />
       </div>
     </SlideCover>
-    {#each advantage3 as { title, description }, index}
+    {#each advantage4 as { title, description }, index}
       <SlideSmall number={index + 1} {title}>
         {description}
       </SlideSmall>
