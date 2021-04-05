@@ -62,7 +62,7 @@
     </PostStep>
     <div class="flex flex-col text-center space-y-4 text-b2">
       <ExternalLink
-        href="https://drive.google.com/drive/u/0/folders/1c8sxaw8SileWT9U6GildCO1klR77BUgm"
+        href="https://drive.google.com/file/d/1OoUqd-fPzgb_YLbBOvQRhjKIAWQ2S8U5/view?usp=sharing"
       >
         <Button
           class="bg-green-3 text-white border-green-3 hover:(bg-black text-white border-black)"
@@ -70,20 +70,20 @@
         ></ExternalLink
       >
       <ExternalLink
-        href="https://drive.google.com/drive/u/0/folders/1c8sxaw8SileWT9U6GildCO1klR77BUgm"
+        href="https://drive.google.com/file/d/1dUTF1-agyw0sWXbYY-buPkGfpj_Au6Xb/view?usp=sharing"
       >
         <Button class="text-green-2 border border-green-2 hover:bg-white"
           >ดูตัวอย่างและวิธีการกรอกแบบฟอร์ม
         </Button></ExternalLink
       >
       <ExternalLink
-        href="https://drive.google.com/drive/u/0/folders/1c8sxaw8SileWT9U6GildCO1klR77BUgm"
-        class="text-b3 text-green-2"
+        href="https://drive.google.com/file/d/1WHyz8F4BcJjOLEuPESrkGE9wTZM-BA8l/view?usp=sharing"
+        class="text-b3 text-green-2 hover:underline"
         >ดูร่างรัฐธรรมนูญแก้ไขเพิ่มเติม ฉบับเต็ม
       </ExternalLink>
       <ExternalLink
-        href="https://drive.google.com/drive/u/0/folders/1c8sxaw8SileWT9U6GildCO1klR77BUgm"
-        class="text-b3 text-green-2"
+        href="https://drive.google.com/file/d/1KXOO9W8Qqs6So9zticwDQgu3kSg7fYVn/view?usp=sharing"
+        class="text-b3 text-green-2 hover:underline"
         >แผ่นพับ ทำไมต้องรื้อระบอบประยุทธ์?
       </ExternalLink>
     </div>

@@ -44,7 +44,7 @@
       </div>
       <div>
         <a
-          href="https://drive.google.com/drive/u/0/folders/1c8sxaw8SileWT9U6GildCO1klR77BUgm"
+          href="https://drive.google.com/file/d/1WHyz8F4BcJjOLEuPESrkGE9wTZM-BA8l/view?usp=sharing"
           class="text-b4 underline bg-white px-2 py-1 bg-opacity-50 rounded"
           target="_blank"
           rel="noopener noreferrer"
