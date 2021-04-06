@@ -1,17 +1,12 @@
 <script lang="ts">
-  import { onMount } from 'svelte'
   import ExternalLink from '../external-link.svelte'
 
-  let url: string
-
-  onMount(() => {
-    url = encodeURI(window.location.href)
-  })
+  const URL = 'https://resolutioncon.com/'
 </script>
 
 <div class="flex flex-row space-x-1 md:space-x-2">
   <p class="text-b4 text-black my-auto">แชร์</p>
-  <ExternalLink href="http://www.facebook.com/sharer/sharer.php?u={url}">
+  <ExternalLink href="http://www.facebook.com/sharer/sharer.php?u={URL}">
     <svg
       viewBox="0 0 21 20"
       fill="none"
@@ -25,7 +20,7 @@
       />
     </svg>
   </ExternalLink>
-  <ExternalLink href="https://twitter.com/intent/tweet?url={url}">
+  <ExternalLink href="https://twitter.com/intent/tweet?url={URL}">
     <svg
       viewBox="0 0 21 20"
       fill="none"
@@ -39,7 +34,7 @@
       />
     </svg>
   </ExternalLink>
-  <ExternalLink href="https://social-plugins.line.me/lineit/share?url={url}">
+  <ExternalLink href="https://social-plugins.line.me/lineit/share?url={URL}">
     <svg
       viewBox="0 0 21 20"
       fill="none"
