@@ -3,13 +3,14 @@
     name: string
     dateStart?: string
     dateEnd?: string
-    contacts: string
+    contacts?: string
     mapLink?: string
     lastUpdated: string
     isTemporary?: boolean
     timeStart?: string
     timeEnd?: string
     place?: string
+    note?: string
   }
 </script>
 
@@ -37,9 +38,15 @@
     {#if point.place}
       <Info label="สถานที่">{point.place}</Info>
     {/if}
-    {#if point.dateStart && point.dateEnd}
+    {#if point.dateStart || point.dateEnd}
       <Info label="วันที่">
-        {formatThaiDate(point.dateStart)} - {formatThaiDate(point.dateEnd)}
+        {#if point.dateStart && point.dateEnd}
+          {formatThaiDate(point.dateStart)} - {formatThaiDate(point.dateEnd)}
+        {:else if point.dateStart}
+          {formatThaiDate(point.dateStart)} เป็นต้นไป
+        {:else}
+          จนถึง {formatThaiDate(point.dateEnd)}
+        {/if}
       </Info>
     {/if}
     {#if point.timeStart && point.timeEnd}
@@ -50,6 +57,13 @@
     {#if point.contacts}
       <Info label="ติดต่อ">
         {#each point.contacts.split('\n') as contact}
+          <p>{contact}</p>
+        {/each}
+      </Info>
+    {/if}
+    {#if point.note}
+      <Info label="หมายเหตุ">
+        {#each point.note.split('\n') as contact}
           <p>{contact}</p>
         {/each}
       </Info>
