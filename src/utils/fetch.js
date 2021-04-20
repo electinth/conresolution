@@ -37,7 +37,9 @@ const fetchRecords = (table) =>
   })
 
 const getCountData = async () => {
-  const countRecords = await fetchRecords(base(TABLE_COUNT))
+  const countRecords = (
+    await fetchRecords(base(TABLE_COUNT))
+  ).filter((record) => record.get('date'))
 
   const count = countRecords.reduce(
     (sum, record) => sum + record.get('count'),
@@ -55,7 +57,9 @@ const getCountData = async () => {
 }
 
 const getLocationData = async () => {
-  const locationRecords = await fetchRecords(base(TABLE_LOCATION))
+  const locationRecords = (
+    await fetchRecords(base(TABLE_LOCATION))
+  ).filter((record) => record.get('name'))
   const provinceRecords = await fetchRecords(base(TABLE_PROVINCES))
 
   const provinces = [
