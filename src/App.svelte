@@ -1,4 +1,5 @@
 <script lang="ts">
+  import MessengerChat from './components/messenger-chat.svelte'
   import Footer from './sections/footer.svelte'
   import How from './sections/how.svelte'
   import Landing from './sections/landing.svelte'
@@ -8,6 +9,7 @@
 </script>
 
 <main>
+  <MessengerChat />
   <Landing />
   <Why />
   <How />
