@@ -4,6 +4,7 @@
   export let dark: boolean = false
 
   $: fill = dark ? 'black' : 'white'
+
 </script>
 
 <div class="flex flex-row space-x-1">
@@ -54,6 +55,19 @@
         d="M18.1529 14.5L12.5765 11.2882V17.7118L18.1529 14.5Z"
         fill={dark ? '#FFD700' : 'black'}
       />
+    </svg>
+  </ExternalLink>
+  <ExternalLink href="https://www.instagram.com/resolutioncon">
+    <svg
+      width="30"
+      height="30"
+      viewBox="0 0 30 30"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect x="7.5" y="7.5" width="15" height="15" rx="2.5" stroke={fill} />
+      <circle cx="15" cy="15" r="3.5" stroke={fill} />
+      <circle cx="20" cy="10" r="1" {fill} />
     </svg>
   </ExternalLink>
 </div>
