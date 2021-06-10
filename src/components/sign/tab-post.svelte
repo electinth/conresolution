@@ -12,7 +12,7 @@
       <p>
         ดาวน์โหลด แบบฟอร์ม <ExternalLink
           href="https://progressivemovement.in.th/wp-content/uploads/2021/04/เอกสารการลงลายมือชื่อของผู้เข้าชื่อเสนอกฎหมาย.pdf"
-          class="font-bold inline hover:underline"
+          class="inline underline"
         >
           เอกสารการลงลายมือชื่อของผู้เข้าชื่อเสนอกฎหมาย</ExternalLink
         >
@@ -23,7 +23,13 @@
       <p>พิมพ์ลงบนกระดาษ A4 หรือเปิดไฟล์</p>
     </PostStep>
     <PostStep number="3">
-      <p>กรอกข้อมูล ในแบบฟอร์มให้ครบถ้วน</p>
+      <p>
+        กรอกข้อมูล ในแบบฟอร์มให้ครบถ้วน <ExternalLink
+          href="https://progressivemovement.in.th/wp-content/uploads/2021/06/วิธีการกรอกแบบฟอร์มแก้รัฐธรรมนูญ.pdf"
+          class="inline underline"
+          >ดูตัวอย่างและวิธีการกรอกแบบฟอร์ม
+        </ExternalLink>
+      </p>
     </PostStep>
     <PostStep number="4">
       <p>
