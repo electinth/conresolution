@@ -18,15 +18,19 @@
   export let points: Point[]
 
   let isOpen: boolean = false
+
 </script>
 
 <div class="flex flex-col space-y-6 py-4">
-  <button class="flex flex-row text-left" on:click={() => (isOpen = !isOpen)}>
+  <div
+    class="flex flex-row text-left cursor-pointer"
+    on:click={() => (isOpen = !isOpen)}
+  >
     <div class="flex-1">
       <span class="text-h6 font-bold">{province}</span>
       <span class="text-b2">( {points.length} จุด )</span>
     </div>
-    <div class="flex">
+    <div class="flex flex-col">
       <svg
         width="17"
         height="13"
@@ -39,7 +43,7 @@
         <path d="M1 1.5L8.5 10.5L16 1.5" stroke="#0E3431" stroke-width="2" />
       </svg>
     </div>
-  </button>
+  </div>
 
   {#if isOpen}
     <div class="grid grid-cols-1 md:grid-cols-2">
