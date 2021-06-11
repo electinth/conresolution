@@ -1,24 +1,23 @@
 <script lang="ts">
   import Sharer from '../components/landing/sharer.svelte'
-  // import countData from '../assets/data/count.json'
+  import countData from '../assets/data/count.json'
   import FollowUs from '../components/follow-us.svelte'
   import Button from '../components/button.svelte'
-  // import { formatThaiDate } from '../utils/date'
+  import { formatThaiDate } from '../utils/date'
+
 </script>
 
 <section
   class="text-center h-screen flex bg-black relative bg-no-repeat bg-cover bg-center px-6"
 >
-  <div class="m-auto space-y-6">
+  <div class="m-auto space-y-3 md:space-y-6">
     <img
       src="images/banner.png"
       alt="ขอคนละชื่อ รื้อระบอบประยุทธ์"
-      class="max-w-lg mx-auto w-full"
+      class="max-w-48 md:max-w-sm mx-auto w-full"
     />
 
-    <!-- <div
-      class="flex flex-col justify-center text-blue-1 -md:space-y-4 md:(flex-row space-x-4)"
-    >
+    <div class="flex flex-col justify-center md:(flex-row space-x-4)">
       <p class="text-h5 my-auto">มีแล้วกว่า</p>
       <p class="text-number">{countData.count.toLocaleString('th-TH')}</p>
       <p class="text-h5 my-auto">รายชื่อ</p>
@@ -26,7 +25,7 @@
 
     <p class="text-b4">
       อัปเดทข้อมูลล่าสุด {formatThaiDate(countData.lastUpdated)}
-    </p> -->
+    </p>
 
     <div class="space-y-4">
       <div
@@ -66,4 +65,5 @@
   section {
     background-image: url('/images/landing-bg.jpg');
   }
+
 </style>
