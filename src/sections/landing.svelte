@@ -37,9 +37,9 @@
             >ลงชื่อ</Button
           >
         </a>
-        <a href="#volunteer" class="flex-1">
+        <!--         <a href="#volunteer" class="flex-1">
           <Button class="border-3 hover:bg-white">ร่วมเป็นอาสาสมัคร</Button>
-        </a>
+        </a> -->
       </div>
       <div>
         <a
